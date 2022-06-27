@@ -6,7 +6,7 @@
 <title>テンプレート</title>
 <link href="../../_common/images/favicon.ico" rel="shortcut icon">
 <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500" rel="stylesheet">
-<link href="../../_common/css/style.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
 </head>
 <style>
   .list{
@@ -94,9 +94,9 @@
       window.alert('読み込みエラー');
     });
     // クリックされたら空き状況を表示
-    $('.check').on('check', function(){
+    $('.check').on('click', function(){
       if($(this).hasClass('crowded')){
-        $('this').text('残席わずか').addClass('red');
+        $(this).text('残席わずか').addClass('red');
       } else {
         $(this).text('お席あります').addClass('green');
       }
